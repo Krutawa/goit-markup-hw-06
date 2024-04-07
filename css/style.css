@@ -45,7 +45,7 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 1158px;
+  width: 100%;
 }
 /*======================HEADER===========================*/
 .header {
@@ -230,7 +230,8 @@ img {
 }
 
 .advant-future {
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -243,25 +244,39 @@ img {
 .future-icons {
 }
 
+.advant-target {
+width: 288px;
+height: 120px;
+}
+
 .advant-title {
 }
 
 .advant-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .advant-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+width: 100%;
 }
 
 .advant-motivation {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; */
   color: #2e2f42;
   margin-bottom: 8px;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
 }
 
 .advant-text {
@@ -269,6 +284,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 500;
+  align-content: center;
 }
 
 /*==================TEAM=========================*/
@@ -539,13 +556,6 @@ img {
   color: #fff;
 }
 
-/* .footer-feedback {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 80px;
-} */
-
 .feedback-form {
   display: flex;
   align-items: center;
@@ -606,7 +616,6 @@ img {
 
 .feedback-btn-icons {
   margin-left: 16px;
-  /* padding: 8px, 24px; */
   fill: #fff;
 }
 
@@ -619,14 +628,8 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
-  /* opacity: 0;
-  visibility: hidden;
-  pointer-events: none; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .is-open {
