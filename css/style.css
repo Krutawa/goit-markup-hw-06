@@ -47,6 +47,7 @@ img {
   /* margin: 0 auto; */
   margin-right: 16px;
   margin-left: 16px;
+  width: 320px;
 }
 /*======================HEADER===========================*/
 .header {
@@ -227,15 +228,17 @@ img {
 /*===================ADVANT=========================*/
 
 .advant {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding-top: 93px;
+  padding-bottom: 99px;
 }
 
 .advant-future {
-  display: flex;
+  display: block;
   display: none;
   align-items: center;
   justify-content: center;
-  height: 112px;
+  /* height: 112px; */
   background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
@@ -246,7 +249,6 @@ img {
 }
 
 .advant-target {
-width: 100%;
 /* height: 120px; */
 display: block;
 align-items: center;
@@ -265,7 +267,6 @@ justify-content: center;
 
 .advant-item {
   /* width: calc((100% - 72px) / 4); */
-width: 100%;
 padding-right: 28px;
 }
 
